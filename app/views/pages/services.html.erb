@@ -1,0 +1,219 @@
+<% content_for :title, "Our Services — Kala Interiors & Decor" %>
+
+<!-- HERO -->
+<section class="relative flex items-center justify-center overflow-hidden" style="background: #0A1628; min-height: 55vh;">
+  <div class="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=90&auto=format&fit=crop"
+      alt="Premium interior design services"
+      class="w-full h-full object-cover"
+      style="opacity: 0.2;"
+    />
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(10,22,40,0.7) 0%, rgba(10,22,40,0.9) 100%);"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center py-32">
+    <div class="flex items-center justify-center gap-4 mb-6">
+      <div class="w-10 h-px" style="background: #C9A84C;"></div>
+      <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">What We Offer</span>
+      <div class="w-10 h-px" style="background: #C9A84C;"></div>
+    </div>
+    <h1 class="mb-4 leading-none" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.5rem, 6vw, 5rem); color: #F8F7F4;">
+      Our <em style="color: #C9A84C;">Services</em>
+    </h1>
+    <p class="max-w-xl mx-auto" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 0.9375rem; color: rgba(248,247,244,0.55);">
+      Thirteen premium interior design services to transform every room in your home, crafted with care across all of Telangana.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="py-24 lg:py-32" style="background: #F8F7F4;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- Service 1: Plywood Cupboards -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-20 overflow-hidden" style="border: 1px solid rgba(10,22,40,0.08);">
+      <div class="overflow-hidden relative" style="min-height: 420px;">
+        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=85&auto=format&fit=crop" alt="Custom plywood cupboards and wardrobes" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+      </div>
+      <div class="p-10 lg:p-14 flex flex-col justify-center" style="background: white;">
+        <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">01</div>
+        <h2 class="mb-4 leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 2.25rem; color: #0A1628;">Plywood Cupboards</h2>
+        <div class="w-10 h-px mb-5" style="background: #C9A84C;"></div>
+        <p class="mb-6 leading-relaxed text-sm" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.65);">Precision-crafted plywood wardrobes, kitchen cabinets, and storage units built for longevity. We use premium-grade BWR and marine plywood with a wide choice of shutters, laminates, and hardware finishes.</p>
+        <ul class="space-y-2.5">
+          <% ["Premium BWR & Marine Plywood", "Custom dimensions for any space", "30+ laminate and veneer finishes", "Soft-close hinges and drawers", "5-year structural warranty", "Kitchen, bedroom & living room units"].each do |feat| %>
+            <li class="flex items-center gap-3 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.65);">
+              <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+              <%= feat %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service 2: PVC Cupboards -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-20 overflow-hidden" style="border: 1px solid rgba(10,22,40,0.08);">
+      <div class="p-10 lg:p-14 flex flex-col justify-center order-2 lg:order-1" style="background: white;">
+        <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">02</div>
+        <h2 class="mb-4 leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 2.25rem; color: #0A1628;">PVC Cupboards</h2>
+        <div class="w-10 h-px mb-5" style="background: #C9A84C;"></div>
+        <p class="mb-6 leading-relaxed text-sm" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.65);">Moisture-resistant, termite-proof PVC cabinets that are perfect for kitchens, bathrooms, and utility areas. Low-maintenance and available in a variety of colours and textures to suit your aesthetic.</p>
+        <ul class="space-y-2.5">
+          <% ["100% waterproof construction", "Termite and pest resistant", "Ideal for humid environments", "Easy-clean glossy finishes", "Lightweight yet durable", "10+ colour and texture options"].each do |feat| %>
+            <li class="flex items-center gap-3 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.65);">
+              <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+              <%= feat %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="overflow-hidden order-1 lg:order-2 relative" style="min-height: 420px;">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=85&auto=format&fit=crop" alt="PVC cupboards and cabinets" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+      </div>
+    </div>
+
+    <!-- Services 3-6: 2-column cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+
+      <!-- Blinds -->
+      <div class="overflow-hidden" style="background: white; border: 1px solid rgba(10,22,40,0.08);">
+        <div class="overflow-hidden" style="height: 280px;">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&auto=format&fit=crop" alt="Window blinds interior design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="p-8">
+          <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">03</div>
+          <h2 class="mb-3 text-2xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">Blinds</h2>
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <p class="mb-5 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.65);">Elegant window blinds that combine privacy with style. From roller and venetian to zebra blinds, we offer solutions for every window and room type.</p>
+          <ul class="space-y-2">
+            <% ["Roller, Venetian & Zebra Blinds", "Blackout and semi-transparent options", "Custom sizing for all windows", "UV-protective fabrics available"].each do |feat| %>
+              <li class="flex items-center gap-3 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.6);">
+                <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+                <%= feat %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Wallpapers -->
+      <div class="overflow-hidden" style="background: white; border: 1px solid rgba(10,22,40,0.08);">
+        <div class="overflow-hidden" style="height: 280px;">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=85&auto=format&fit=crop" alt="Designer wallpapers" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="p-8">
+          <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">04</div>
+          <h2 class="mb-3 text-2xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">Wallpapers</h2>
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <p class="mb-5 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.65);">Transform your walls with our curated collection of premium wallpapers — from subtle textures and geometric patterns to bold statement murals.</p>
+          <ul class="space-y-2">
+            <% ["500+ pattern and texture catalogue", "Vinyl, fabric and 3D wallpapers", "Professional installation included", "Washable and durable materials"].each do |feat| %>
+              <li class="flex items-center gap-3 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.6);">
+                <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+                <%= feat %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Painting -->
+      <div class="overflow-hidden" style="background: white; border: 1px solid rgba(10,22,40,0.08);">
+        <div class="overflow-hidden" style="height: 280px;">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=85&auto=format&fit=crop" alt="Interior painting services" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="p-8">
+          <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">05</div>
+          <h2 class="mb-3 text-2xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">Painting</h2>
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <p class="mb-5 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.65);">Professional interior and exterior painting with flawless finish. We use premium paints and expert techniques including texture, stencil, and ombre effects.</p>
+          <ul class="space-y-2">
+            <% ["Asian Paints & Berger certified applicators", "Texture and decorative finishes", "Primer + 2 coat application", "Interior and exterior painting"].each do |feat| %>
+              <li class="flex items-center gap-3 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.6);">
+                <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+                <%= feat %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pleated Mesh Doors -->
+      <div class="overflow-hidden" style="background: white; border: 1px solid rgba(10,22,40,0.08);">
+        <div class="overflow-hidden" style="height: 280px;">
+          <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800&q=85&auto=format&fit=crop" alt="Pleated mesh sliding doors" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="p-8">
+          <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">06</div>
+          <h2 class="mb-3 text-2xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">Pleated Mesh Doors</h2>
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <p class="mb-5 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.65);">Elegant sliding pleated mesh doors that allow fresh air while keeping insects out. Perfect for balconies, verandas, and patio openings.</p>
+          <ul class="space-y-2">
+            <% ["Retractable & sliding mechanisms", "Fibreglass and aluminium mesh options", "Custom frame colours available", "Easy-clean and low-maintenance"].each do |feat| %>
+              <li class="flex items-center gap-3 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.6);">
+                <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+                <%= feat %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services 7-13: 3-column cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <% [
+        { num: "07", title: "3D Design", img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85&auto=format&fit=crop", alt: "3D interior design visualization", desc: "Photorealistic 3D renders of your space before any work begins, so you can visualize and approve every detail.", feats: ["Full room 3D visualization", "Multiple design iterations", "Material & colour selection", "Virtual walkthrough"] },
+        { num: "08", title: "Beds & Bedroom Furniture", img: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=85&auto=format&fit=crop", alt: "Custom bedroom furniture", desc: "Custom-designed beds, side tables, and bedroom furniture crafted to complement your space and maximize storage.", feats: ["Platform, storage & panel beds", "Custom headboard designs", "Matching side tables", "Built-in storage solutions"] },
+        { num: "09", title: "False Ceiling", img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85&auto=format&fit=crop", alt: "False ceiling design", desc: "Elegant gypsum and POP false ceilings with integrated LED lighting, cove lighting, and coffered designs.", feats: ["Gypsum & POP options", "Integrated LED lighting", "Cove and tray designs", "Acoustic ceiling solutions"] },
+        { num: "10", title: "PVC Ceiling", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85&auto=format&fit=crop", alt: "PVC ceiling panels", desc: "Lightweight, moisture-resistant PVC ceiling panels ideal for bathrooms, kitchens, and utility areas.", feats: ["100% waterproof panels", "Quick installation", "Available in 50+ designs", "Easy replacement panels"] },
+        { num: "11", title: "Curtains", img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&auto=format&fit=crop", alt: "Designer curtains and drapes", desc: "Bespoke curtains and drapes in premium fabrics — from sheer voiles to heavy blackout curtains for every room.", feats: ["Custom stitching & tailoring", "200+ fabric selections", "Blackout & sheer options", "Professional installation"] },
+        { num: "12", title: "Sofas", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=85&auto=format&fit=crop", alt: "Designer sofas and seating", desc: "Handcrafted sofas and sectional seating in premium fabrics and leathers, designed to anchor your living room.", feats: ["L-shaped, 3-seater & sectional", "Premium fabric & leather", "Custom upholstery colours", "High-density foam cushions"] },
+        { num: "13", title: "Cushioning", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=85&auto=format&fit=crop", alt: "Cushion and upholstery work", desc: "Custom cushion making, reupholstery, and fabric work to refresh chairs, sofas, benches, and window seats.", feats: ["Chair & sofa reupholstery", "Custom cushion sizes", "50+ fabric & print options", "Durable foam filling"] }
+      ].each do |svc| %>
+        <div class="overflow-hidden group" style="background: white; border: 1px solid rgba(10,22,40,0.08);">
+          <div class="overflow-hidden" style="height: 220px;">
+            <img src="<%= svc[:img] %>" alt="<%= svc[:alt] %>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+          </div>
+          <div class="p-6">
+            <div class="text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;"><%= svc[:num] %></div>
+            <h3 class="mb-2 text-xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;"><%= svc[:title] %></h3>
+            <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+            <p class="mb-4 text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.6);"><%= svc[:desc] %></p>
+            <ul class="space-y-1.5">
+              <% svc[:feats].each do |feat| %>
+                <li class="flex items-center gap-2.5 text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55);">
+                  <span class="w-1 h-1 rounded-full flex-shrink-0" style="background: #C9A84C;"></span>
+                  <%= feat %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20" style="background: #0A1628;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <div class="flex items-center justify-center gap-4 mb-6">
+      <div class="w-10 h-px" style="background: #C9A84C;"></div>
+      <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">Start Your Project</span>
+      <div class="w-10 h-px" style="background: #C9A84C;"></div>
+    </div>
+    <h2 class="mb-4 leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); color: #F8F7F4;">
+      Not Sure Which Service You Need?
+    </h2>
+    <p class="mb-10 max-w-lg mx-auto" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 0.9375rem; color: rgba(248,247,244,0.5);">
+      Our team will assess your space and recommend the best combination of services to achieve your vision within your budget.
+    </p>
+    <%= link_to contact_path, class: "inline-flex items-center gap-3 px-8 py-4 text-xs tracking-widest uppercase transition-all hover:gap-5", style: "font-family: 'Inter', sans-serif; background: #C9A84C; color: #0A1628; font-weight: 500;" do %>
+      Book a Free Consultation
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    <% end %>
+  </div>
+</section>

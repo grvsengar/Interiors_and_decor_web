@@ -1,0 +1,482 @@
+<% content_for :title, "Kala Interiors & Decor — Premium Interior Design in Telangana" %>
+
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background: #0A1628;">
+  <div class="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=90&auto=format&fit=crop"
+      alt="Luxury interior living room design"
+      class="w-full h-full object-cover"
+      style="opacity: 0.28;"
+    />
+    <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(10,22,40,0.65) 50%, rgba(10,22,40,0.85) 100%);"></div>
+  </div>
+
+  <!-- Decorative vertical line -->
+  <div class="absolute left-16 top-1/4 bottom-1/4 w-px hidden xl:block" style="background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.4), transparent);"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+    <div class="max-w-3xl">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="w-12 h-px" style="background: #C9A84C;"></div>
+        <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.25em;">Premium Interior Design</span>
+      </div>
+
+      <h1 class="mb-6 leading-none" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(3rem, 7vw, 6rem); color: #F8F7F4; letter-spacing: -0.01em;">
+        Crafting Spaces<br/>
+        <em style="color: #C9A84C; font-style: italic;">That Inspire</em><br/>
+        Every Day
+      </h1>
+
+      <p class="mb-10 max-w-xl leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 1.0625rem; color: rgba(248,247,244,0.65);">
+        Kala Interiors & Decor transforms your living spaces into works of art. From custom cupboards to exquisite ceilings, we bring luxury within reach across all of Telangana.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <%= link_to portfolio_path, class: "inline-flex items-center gap-3 px-8 py-4 text-xs tracking-widest uppercase transition-all duration-300 hover:gap-5", style: "font-family: 'Inter', sans-serif; background: #C9A84C; color: #0A1628; font-weight: 500;" do %>
+          Explore Our Work
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <% end %>
+        <%= link_to contact_path, class: "inline-flex items-center gap-3 px-8 py-4 text-xs tracking-widest uppercase transition-all duration-300 hover:bg-white/10", style: "font-family: 'Inter', sans-serif; color: #F8F7F4; border: 1px solid rgba(248,247,244,0.3);" do %>
+          Get A Free Quote
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+    <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: rgba(201,168,76,0.6); font-size: 9px; letter-spacing: 0.2em;">Scroll</span>
+    <div class="w-px h-8" style="background: linear-gradient(to bottom, rgba(201,168,76,0.6), transparent);"></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section style="background: #C9A84C;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl mb-1" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">500+</div>
+        <div class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.7); font-size: 9px; letter-spacing: 0.18em;">Projects Completed</div>
+      </div>
+      <div>
+        <div class="text-4xl mb-1" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">8+</div>
+        <div class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.7); font-size: 9px; letter-spacing: 0.18em;">Years Experience</div>
+      </div>
+      <div>
+        <div class="text-4xl mb-1" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">13</div>
+        <div class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.7); font-size: 9px; letter-spacing: 0.18em;">Services Offered</div>
+      </div>
+      <div>
+        <div class="text-4xl mb-1" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #0A1628;">100%</div>
+        <div class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.7); font-size: 9px; letter-spacing: 0.18em;">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="py-24 lg:py-32" style="background: #F8F7F4;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Images grid -->
+      <div class="relative grid grid-cols-2 gap-4">
+        <div class="space-y-4">
+          <div class="overflow-hidden" style="aspect-ratio: 3/4;">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=85&auto=format&fit=crop" alt="Modern living room interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+          </div>
+          <div class="overflow-hidden" style="aspect-ratio: 4/3;">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=85&auto=format&fit=crop" alt="Luxury kitchen design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+          </div>
+        </div>
+        <div class="space-y-4 pt-10">
+          <div class="overflow-hidden" style="aspect-ratio: 4/3;">
+            <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=85&auto=format&fit=crop" alt="Elegant bedroom design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+          </div>
+          <div class="overflow-hidden" style="aspect-ratio: 3/4;">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=85&auto=format&fit=crop" alt="Custom wardrobe design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"/>
+          </div>
+        </div>
+        <!-- Gold accent -->
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 hidden lg:block" style="background: #C9A84C; opacity: 0.15; z-index: -1;"></div>
+      </div>
+
+      <!-- Text -->
+      <div>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-10 h-px" style="background: #C9A84C;"></div>
+          <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">About Kala</span>
+        </div>
+
+        <h2 class="mb-6 leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3.25rem); color: #0A1628;">
+          Where Artistry Meets<br/><em>Thoughtful Design</em>
+        </h2>
+
+        <p class="mb-5 leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 0.9375rem; color: rgba(10,22,40,0.65);">
+          Founded by Vivek Kumar Thodupunuri, Kala Interiors & Decor has been redefining interior spaces across Telangana. We believe your home should be a reflection of who you are — beautiful, functional, and uniquely yours.
+        </p>
+        <p class="mb-8 leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 0.9375rem; color: rgba(10,22,40,0.65);">
+          From concept to completion, our team of skilled craftsmen and designers work closely with you to create interiors that stand the test of time. Every detail, every material, every finish is chosen with purpose and precision.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6 mb-10">
+          <div class="border-l-2 pl-4" style="border-color: #C9A84C;">
+            <div class="text-sm font-medium mb-1" style="font-family: 'Inter', sans-serif; color: #0A1628;">Premium Materials</div>
+            <div class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); font-weight: 300;">Curated selection of top-grade materials for lasting beauty</div>
+          </div>
+          <div class="border-l-2 pl-4" style="border-color: #C9A84C;">
+            <div class="text-sm font-medium mb-1" style="font-family: 'Inter', sans-serif; color: #0A1628;">On-Time Delivery</div>
+            <div class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); font-weight: 300;">Committed to completing your project on schedule</div>
+          </div>
+          <div class="border-l-2 pl-4" style="border-color: #C9A84C;">
+            <div class="text-sm font-medium mb-1" style="font-family: 'Inter', sans-serif; color: #0A1628;">Custom 3D Designs</div>
+            <div class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); font-weight: 300;">Visualize your space before a single nail is driven</div>
+          </div>
+          <div class="border-l-2 pl-4" style="border-color: #C9A84C;">
+            <div class="text-sm font-medium mb-1" style="font-family: 'Inter', sans-serif; color: #0A1628;">Pan-Telangana</div>
+            <div class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); font-weight: 300;">Serving clients across all districts of Telangana</div>
+          </div>
+        </div>
+
+        <%= link_to about_path, class: "inline-flex items-center gap-3 text-xs tracking-widest uppercase border-b pb-0.5 transition-all hover:gap-5", style: "font-family: 'Inter', sans-serif; color: #C9A84C; border-color: #C9A84C;" do %>
+          Discover Our Story
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="py-24 lg:py-32" style="background: #0A1628;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="w-10 h-px" style="background: #C9A84C;"></div>
+        <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">What We Offer</span>
+        <div class="w-10 h-px" style="background: #C9A84C;"></div>
+      </div>
+      <h2 class="mb-4 leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); color: #F8F7F4;">
+        Our <em style="color: #C9A84C;">Services</em>
+      </h2>
+      <p class="max-w-xl mx-auto" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 0.9375rem; color: rgba(248,247,244,0.5);">
+        A complete suite of interior design solutions to transform every corner of your home.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service Card 1 -->
+      <div class="group relative overflow-hidden cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.12);">
+        <div class="overflow-hidden" style="height: 220px;">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=85&auto=format&fit=crop" alt="Plywood cupboards" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="opacity: 0.7;"/>
+        </div>
+        <div class="p-6">
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <h3 class="mb-2 text-xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">Plywood Cupboards</h3>
+          <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Durable, beautifully crafted plywood wardrobes and cabinets tailored to your space and style.</p>
+        </div>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(to top, rgba(201,168,76,0.1), transparent); pointer-events: none;"></div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="group relative overflow-hidden cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.12);">
+        <div class="overflow-hidden" style="height: 220px;">
+          <img src="https://images.unsplash.com/photo-1616137466211-f998e03edb2c?w=800&q=85&auto=format&fit=crop" alt="PVC cupboards" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="opacity: 0.7;"/>
+        </div>
+        <div class="p-6">
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <h3 class="mb-2 text-xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">PVC Cupboards</h3>
+          <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Moisture-resistant PVC cabinets ideal for kitchens, bathrooms, and high-humidity spaces.</p>
+        </div>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(to top, rgba(201,168,76,0.1), transparent); pointer-events: none;"></div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="group relative overflow-hidden cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.12);">
+        <div class="overflow-hidden" style="height: 220px;">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85&auto=format&fit=crop" alt="False ceiling design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="opacity: 0.7;"/>
+        </div>
+        <div class="p-6">
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <h3 class="mb-2 text-xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">False Ceiling</h3>
+          <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Stunning gypsum and POP false ceilings with integrated lighting to elevate any room.</p>
+        </div>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(to top, rgba(201,168,76,0.1), transparent); pointer-events: none;"></div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="group relative overflow-hidden cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.12);">
+        <div class="overflow-hidden" style="height: 220px;">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=85&auto=format&fit=crop" alt="Wallpaper interior design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="opacity: 0.7;"/>
+        </div>
+        <div class="p-6">
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <h3 class="mb-2 text-xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">Wallpapers</h3>
+          <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Curated wallpaper collections from subtle textures to bold patterns for every aesthetic.</p>
+        </div>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(to top, rgba(201,168,76,0.1), transparent); pointer-events: none;"></div>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="group relative overflow-hidden cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.12);">
+        <div class="overflow-hidden" style="height: 220px;">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=85&auto=format&fit=crop" alt="Sofa and seating" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="opacity: 0.7;"/>
+        </div>
+        <div class="p-6">
+          <div class="w-8 h-px mb-4" style="background: #C9A84C;"></div>
+          <h3 class="mb-2 text-xl" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">Sofas & Cushioning</h3>
+          <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Premium seating solutions with custom upholstery and cushioning to match your decor.</p>
+        </div>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(to top, rgba(201,168,76,0.1), transparent); pointer-events: none;"></div>
+      </div>
+
+      <!-- Service Card 6 - CTA card -->
+      <div class="flex flex-col items-center justify-center p-8 text-center" style="background: #C9A84C; min-height: 350px;">
+        <div class="text-5xl mb-4" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: #0A1628;">13</div>
+        <div class="text-xs tracking-widest uppercase mb-4" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.7); letter-spacing: 0.15em;">Premium Services</div>
+        <p class="mb-6 text-sm leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.7);">Plus Blinds, Curtains, Painting, Beds, PVC Ceiling, 3D Design & Pleated Mesh Doors</p>
+        <%= link_to services_path, class: "inline-flex items-center gap-2 text-xs tracking-widest uppercase px-6 py-3 transition-all hover:gap-4", style: "font-family: 'Inter', sans-serif; background: #0A1628; color: #C9A84C;" do %>
+          View All Services
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO PREVIEW -->
+<section class="py-24 lg:py-32" style="background: #F8F7F4;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-10 h-px" style="background: #C9A84C;"></div>
+          <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">Featured Projects</span>
+        </div>
+        <h2 class="leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); color: #0A1628;">
+          Our Recent <em>Work</em>
+        </h2>
+      </div>
+      <%= link_to portfolio_path, class: "inline-flex items-center gap-3 text-xs tracking-widest uppercase border-b pb-0.5 transition-all hover:gap-5 flex-shrink-0", style: "font-family: 'Inter', sans-serif; color: #C9A84C; border-color: #C9A84C;" do %>
+        View Full Portfolio
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      <% end %>
+    </div>
+
+    <!-- Masonry-like grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <div class="group relative overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 row-span-2">
+        <div style="height: 480px;" class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=85&auto=format&fit=crop" alt="Luxury living room Hyderabad" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%);">
+          <div class="text-xs tracking-widest uppercase mb-1" style="font-family: 'Inter', sans-serif; color: #C9A84C; font-size: 9px; letter-spacing: 0.2em;">Living Room</div>
+          <div class="text-xl" style="font-family: 'Cormorant Garamond', serif; color: #F8F7F4; font-weight: 400;">Grand Luxury Villa</div>
+          <div class="text-xs mt-1" style="font-family: 'Inter', sans-serif; color: rgba(248,247,244,0.55); font-weight: 300;">Hyderabad, Telangana</div>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden">
+        <div style="height: 230px;" class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=85&auto=format&fit=crop" alt="Master bedroom design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-end p-5" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%);">
+          <div class="text-xs tracking-widest uppercase mb-1" style="font-family: 'Inter', sans-serif; color: #C9A84C; font-size: 9px; letter-spacing: 0.2em;">Bedroom</div>
+          <div class="text-lg" style="font-family: 'Cormorant Garamond', serif; color: #F8F7F4; font-weight: 400;">Master Suite Retreat</div>
+          <div class="text-xs mt-1" style="font-family: 'Inter', sans-serif; color: rgba(248,247,244,0.55); font-weight: 300;">Warangal, Telangana</div>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden">
+        <div style="height: 230px;" class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=85&auto=format&fit=crop" alt="Modern kitchen interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-end p-5" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%);">
+          <div class="text-xs tracking-widest uppercase mb-1" style="font-family: 'Inter', sans-serif; color: #C9A84C; font-size: 9px; letter-spacing: 0.2em;">Kitchen</div>
+          <div class="text-lg" style="font-family: 'Cormorant Garamond', serif; color: #F8F7F4; font-weight: 400;">Modular Kitchen</div>
+          <div class="text-xs mt-1" style="font-family: 'Inter', sans-serif; color: rgba(248,247,244,0.55); font-weight: 300;">Karimnagar, Telangana</div>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden">
+        <div style="height: 230px;" class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=85&auto=format&fit=crop" alt="Walk-in wardrobe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-end p-5" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%);">
+          <div class="text-xs tracking-widest uppercase mb-1" style="font-family: 'Inter', sans-serif; color: #C9A84C; font-size: 9px; letter-spacing: 0.2em;">Wardrobe</div>
+          <div class="text-lg" style="font-family: 'Cormorant Garamond', serif; color: #F8F7F4; font-weight: 400;">Walk-in Wardrobe</div>
+          <div class="text-xs mt-1" style="font-family: 'Inter', sans-serif; color: rgba(248,247,244,0.55); font-weight: 300;">Nizamabad, Telangana</div>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden">
+        <div style="height: 230px;" class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85&auto=format&fit=crop" alt="Decorative ceiling design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-end p-5" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%);">
+          <div class="text-xs tracking-widest uppercase mb-1" style="font-family: 'Inter', sans-serif; color: #C9A84C; font-size: 9px; letter-spacing: 0.2em;">Ceiling</div>
+          <div class="text-lg" style="font-family: 'Cormorant Garamond', serif; color: #F8F7F4; font-weight: 400;">Coffered False Ceiling</div>
+          <div class="text-xs mt-1" style="font-family: 'Inter', sans-serif; color: rgba(248,247,244,0.55); font-weight: 300;">Khammam, Telangana</div>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden">
+        <div style="height: 230px;" class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=85&auto=format&fit=crop" alt="Living room sofa decor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-end p-5" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%);">
+          <div class="text-xs tracking-widest uppercase mb-1" style="font-family: 'Inter', sans-serif; color: #C9A84C; font-size: 9px; letter-spacing: 0.2em;">Living Room</div>
+          <div class="text-lg" style="font-family: 'Cormorant Garamond', serif; color: #F8F7F4; font-weight: 400;">Contemporary Living</div>
+          <div class="text-xs mt-1" style="font-family: 'Inter', sans-serif; color: rgba(248,247,244,0.55); font-weight: 300;">Nalgonda, Telangana</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+<section class="py-24 lg:py-32" style="background: #0A1628;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="w-10 h-px" style="background: #C9A84C;"></div>
+        <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">How We Work</span>
+        <div class="w-10 h-px" style="background: #C9A84C;"></div>
+      </div>
+      <h2 class="leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); color: #F8F7F4;">
+        Our Design <em style="color: #C9A84C;">Process</em>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="relative">
+        <div class="text-6xl mb-6 leading-none" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: rgba(201,168,76,0.18);">01</div>
+        <div class="w-10 h-px mb-5" style="background: #C9A84C;"></div>
+        <h3 class="text-xl mb-3" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">Consultation</h3>
+        <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">We begin with a thorough discussion of your vision, lifestyle needs, budget, and timeline to understand exactly what you desire.</p>
+        <!-- Connector -->
+        <div class="hidden lg:block absolute top-12 left-full w-full h-px" style="background: linear-gradient(to right, rgba(201,168,76,0.3), transparent); transform: translateX(-50%);"></div>
+      </div>
+
+      <div class="relative">
+        <div class="text-6xl mb-6 leading-none" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: rgba(201,168,76,0.18);">02</div>
+        <div class="w-10 h-px mb-5" style="background: #C9A84C;"></div>
+        <h3 class="text-xl mb-3" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">3D Design</h3>
+        <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Our designers create detailed 3D visualizations so you can see and approve every element before production begins.</p>
+        <div class="hidden lg:block absolute top-12 left-full w-full h-px" style="background: linear-gradient(to right, rgba(201,168,76,0.3), transparent); transform: translateX(-50%);"></div>
+      </div>
+
+      <div class="relative">
+        <div class="text-6xl mb-6 leading-none" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: rgba(201,168,76,0.18);">03</div>
+        <div class="w-10 h-px mb-5" style="background: #C9A84C;"></div>
+        <h3 class="text-xl mb-3" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">Crafting</h3>
+        <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">Our skilled craftsmen execute the design with meticulous precision using premium materials selected just for you.</p>
+        <div class="hidden lg:block absolute top-12 left-full w-full h-px" style="background: linear-gradient(to right, rgba(201,168,76,0.3), transparent); transform: translateX(-50%);"></div>
+      </div>
+
+      <div>
+        <div class="text-6xl mb-6 leading-none" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: rgba(201,168,76,0.18);">04</div>
+        <div class="w-10 h-px mb-5" style="background: #C9A84C;"></div>
+        <h3 class="text-xl mb-3" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F8F7F4;">Delivery</h3>
+        <p class="text-xs leading-relaxed" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(248,247,244,0.5);">We install everything with care, conduct a final walkthrough, and ensure your complete satisfaction before we leave.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-24 lg:py-32" style="background: #F8F7F4;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="w-10 h-px" style="background: #C9A84C;"></div>
+        <span class="text-xs tracking-widest uppercase" style="font-family: 'Inter', sans-serif; color: #C9A84C; letter-spacing: 0.2em;">Client Stories</span>
+        <div class="w-10 h-px" style="background: #C9A84C;"></div>
+      </div>
+      <h2 class="leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3rem); color: #0A1628;">
+        What Our <em>Clients Say</em>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="p-8" style="background: white; border-top: 3px solid #C9A84C;">
+        <div class="flex gap-1 mb-6">
+          <% 5.times do %>
+            <svg class="w-4 h-4" fill="#C9A84C" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <% end %>
+        </div>
+        <p class="mb-6 leading-relaxed text-sm italic" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.0625rem; color: rgba(10,22,40,0.75);">"Vivek and his team transformed our entire home. The false ceiling work is breathtaking and the cupboards are perfectly crafted. Highly recommend Kala Interiors!"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-medium flex-shrink-0" style="background: #0A1628; font-family: 'Inter', sans-serif;">SR</div>
+          <div>
+            <div class="text-sm font-medium" style="font-family: 'Inter', sans-serif; color: #0A1628;">Suresh Reddy</div>
+            <div class="text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.45);">Hyderabad</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8" style="background: white; border-top: 3px solid #C9A84C;">
+        <div class="flex gap-1 mb-6">
+          <% 5.times do %>
+            <svg class="w-4 h-4" fill="#C9A84C" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <% end %>
+        </div>
+        <p class="mb-6 leading-relaxed text-sm italic" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.0625rem; color: rgba(10,22,40,0.75);">"The wallpaper and paint work they did for our living room is stunning. They were professional, on time, and the 3D preview made the whole process so smooth."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-medium flex-shrink-0" style="background: #0A1628; font-family: 'Inter', sans-serif;">PL</div>
+          <div>
+            <div class="text-sm font-medium" style="font-family: 'Inter', sans-serif; color: #0A1628;">Priya Lakshmi</div>
+            <div class="text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.45);">Warangal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8" style="background: white; border-top: 3px solid #C9A84C;">
+        <div class="flex gap-1 mb-6">
+          <% 5.times do %>
+            <svg class="w-4 h-4" fill="#C9A84C" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <% end %>
+        </div>
+        <p class="mb-6 leading-relaxed text-sm italic" style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.0625rem; color: rgba(10,22,40,0.75);">"Excellent quality PVC cupboards for our kitchen. The pleated mesh door for our balcony is a showstopper. Great value and fantastic service throughout."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-medium flex-shrink-0" style="background: #0A1628; font-family: 'Inter', sans-serif;">RK</div>
+          <div>
+            <div class="text-sm font-medium" style="font-family: 'Inter', sans-serif; color: #0A1628;">Ramesh Kumar</div>
+            <div class="text-xs" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.45);">Karimnagar</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="py-20" style="background: #C9A84C;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <h2 class="mb-4 leading-tight" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 4vw, 3.5rem); color: #0A1628;">
+      Ready to Transform Your Space?
+    </h2>
+    <p class="mb-10 max-w-xl mx-auto" style="font-family: 'Inter', sans-serif; font-weight: 300; color: rgba(10,22,40,0.7); font-size: 0.9375rem;">
+      Contact us today for a free consultation and 3D design preview. Serving all of Telangana.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <%= link_to contact_path, class: "inline-flex items-center gap-3 px-8 py-4 text-xs tracking-widest uppercase transition-all hover:gap-5", style: "font-family: 'Inter', sans-serif; background: #0A1628; color: #C9A84C; font-weight: 500;" do %>
+        Get A Free Quote
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      <% end %>
+      <a href="https://wa.me/918686475754?text=Hi%2C%20I%27m%20interested%20in%20interior%20design%20services" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 text-xs tracking-widest uppercase transition-all hover:bg-black/10" style="font-family: 'Inter', sans-serif; border: 1.5px solid rgba(10,22,40,0.3); color: #0A1628;">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
