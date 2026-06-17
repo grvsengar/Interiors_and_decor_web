@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; padding: 0; background: #F8F7F4; font-family: Arial, sans-serif; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; }
+    .header { background: #0A1628; padding: 32px 40px; }
+    .header-title { color: #C9A84C; font-size: 26px; font-weight: 300; margin: 0; letter-spacing: 2px; }
+    .header-sub { color: rgba(255,255,255,0.5); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin: 4px 0 0; }
+    .gold-bar { height: 3px; background: #C9A84C; }
+    .body { padding: 36px 40px; }
+    .alert-title { font-size: 20px; color: #0A1628; margin: 0 0 6px; font-weight: 600; }
+    .alert-sub { font-size: 13px; color: #888; margin: 0 0 28px; }
+    .field { margin-bottom: 20px; border-left: 3px solid #C9A84C; padding-left: 14px; }
+    .field-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #C9A84C; margin-bottom: 4px; }
+    .field-value { font-size: 15px; color: #0A1628; font-weight: 500; }
+    .message-box { background: #F8F7F4; padding: 18px 20px; border-radius: 4px; font-size: 14px; color: #444; line-height: 1.7; margin-top: 24px; }
+    .cta { margin-top: 32px; text-align: center; }
+    .cta a { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 32px; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; font-weight: 600; }
+    .footer { background: #0A1628; padding: 20px 40px; text-align: center; }
+    .footer p { color: rgba(255,255,255,0.3); font-size: 11px; margin: 0; letter-spacing: 1px; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <p class="header-title">Kala</p>
+      <p class="header-sub">Interiors &amp; Decor</p>
+    </div>
+    <div class="gold-bar"></div>
+
+    <div class="body">
+      <p class="alert-title">New Client Enquiry</p>
+      <p class="alert-sub">Received via the website contact form</p>
+
+      <div class="field">
+        <div class="field-label">Full Name</div>
+        <div class="field-value"><%= @enquiry[:name] %></div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Phone Number</div>
+        <div class="field-value"><%= @enquiry[:phone] %></div>
+      </div>
+
+      <% if @enquiry[:email].present? %>
+      <div class="field">
+        <div class="field-label">Email Address</div>
+        <div class="field-value"><%= @enquiry[:email] %></div>
+      </div>
+      <% end %>
+
+      <% if @enquiry[:service].present? %>
+      <div class="field">
+        <div class="field-label">Service Required</div>
+        <div class="field-value"><%= @enquiry[:service] %></div>
+      </div>
+      <% end %>
+
+      <% if @enquiry[:city].present? %>
+      <div class="field">
+        <div class="field-label">City / District</div>
+        <div class="field-value"><%= @enquiry[:city] %></div>
+      </div>
+      <% end %>
+
+      <% if @enquiry[:budget].present? %>
+      <div class="field">
+        <div class="field-label">Budget Range</div>
+        <div class="field-value"><%= @enquiry[:budget] %></div>
+      </div>
+      <% end %>
+
+      <div class="message-box">
+        <strong style="display:block; font-size:10px; text-transform:uppercase; letter-spacing:2px; color:#C9A84C; margin-bottom:8px;">Message</strong>
+        <%= simple_format(@enquiry[:message]) %>
+      </div>
+
+      <div class="cta">
+        <a href="https://wa.me/<%= @enquiry[:phone].to_s.gsub(/\D/, '').sub(/^0/, '91') %>?text=Hi%20<%=  CGI.escape(@enquiry[:name]) %>%2C%20this%20is%20Kala%20Interiors%20%26%20Decor.%20Thank%20you%20for%20your%20enquiry!">
+          Reply via WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Kala Interiors &amp; Decor &nbsp;|&nbsp; +91 86864 75754 &nbsp;|&nbsp; Telangana</p>
+    </div>
+  </div>
+</body>
+</html>

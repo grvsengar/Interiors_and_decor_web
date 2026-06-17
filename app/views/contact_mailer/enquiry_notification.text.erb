@@ -1,0 +1,16 @@
+KALA INTERIORS & DECOR — New Client Enquiry
+============================================
+
+Name:    <%= @enquiry[:name] %>
+Phone:   <%= @enquiry[:phone] %>
+<% if @enquiry[:email].present? %>Email:   <%= @enquiry[:email] %>
+<% end %><% if @enquiry[:service].present? %>Service: <%= @enquiry[:service] %>
+<% end %><% if @enquiry[:city].present? %>City:    <%= @enquiry[:city] %>
+<% end %><% if @enquiry[:budget].present? %>Budget:  <%= @enquiry[:budget] %>
+<% end %>
+Message:
+--------
+<%= @enquiry[:message] %>
+
+----
+Kala Interiors & Decor | +91 86864 75754 | kalainteriorsanddecor@gmail.com

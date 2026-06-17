@@ -28,10 +28,22 @@ class PagesController < ApplicationController
       redirect_to contact_path and return
     end
 
-    # Log the enquiry to Rails log (swap for email/DB later)
-    Rails.logger.info "[KALA ENQUIRY] Name: #{name} | Phone: #{phone} | Email: #{email} | Service: #{service} | City: #{city} | Budget: #{budget} | Message: #{message}"
+    enquiry = {
+      name: name, phone: phone, email: email,
+      service: service, city: city, budget: budget, message: message
+    }
 
-    flash[:notice] = "Thank you #{name}! We've received your enquiry and will call you within 24 hours."
+    # Always log as backup
+    Rails.logger.info "[KALA ENQUIRY] #{enquiry.inspect}"
+
+    # Send email notification
+    begin
+      ContactMailer.enquiry_notification(enquiry).deliver_now
+    rescue => e
+      Rails.logger.error "[KALA MAILER ERROR] #{e.message}"
+    end
+
+    flash[:notice] = "Thank you #{name}! We've received your enquiry and will get back to you within 24 hours."
     redirect_to contact_path
   end
 end
