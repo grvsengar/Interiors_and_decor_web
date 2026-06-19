@@ -85,29 +85,35 @@
           </h2>
         </div>
 
-        <%= form_with url: contact_path, method: :post, local: true, class: "space-y-5" do |f| %>
+        <%= form_with url: contact_path, method: :post, local: true, class: "space-y-5", id: "contact-form", novalidate: true do |f| %>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">Full Name *</label>
               <%= f.text_field :name, placeholder: "Your full name",
-                class: "w-full px-4 py-3.5 text-sm outline-none transition-all focus:border-amber-500",
+                class: "kala-field w-full px-4 py-3.5 text-sm outline-none transition-all",
                 style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;",
-                required: true %>
+                required: true,
+                data: { error: "Please enter your full name" } %>
+              <span class="kala-error hidden mt-1 text-xs" style="color: #c0392b; font-family: 'Inter', sans-serif;"></span>
             </div>
             <div>
               <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">Phone Number *</label>
               <%= f.telephone_field :phone, placeholder: "+91 XXXXX XXXXX",
-                class: "w-full px-4 py-3.5 text-sm outline-none transition-all",
+                class: "kala-field w-full px-4 py-3.5 text-sm outline-none transition-all",
                 style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;",
-                required: true %>
+                required: true,
+                data: { error: "Please enter your phone number" } %>
+              <span class="kala-error hidden mt-1 text-xs" style="color: #c0392b; font-family: 'Inter', sans-serif;"></span>
             </div>
           </div>
 
           <div>
             <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">Email Address</label>
             <%= f.email_field :email, placeholder: "your@email.com",
-              class: "w-full px-4 py-3.5 text-sm outline-none transition-all",
-              style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;" %>
+              class: "kala-field w-full px-4 py-3.5 text-sm outline-none transition-all",
+              style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;",
+              data: { error: "Please enter a valid email address" } %>
+            <span class="kala-error hidden mt-1 text-xs" style="color: #c0392b; font-family: 'Inter', sans-serif;"></span>
           </div>
 
           <div>
@@ -132,15 +138,18 @@
                 ["Multiple Services", "multiple"]
               ]),
               {},
-              class: "w-full px-4 py-3.5 text-sm outline-none appearance-none",
-              style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300; cursor: pointer;" %>
+              class: "kala-field w-full px-4 py-3.5 text-sm outline-none appearance-none",
+              style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300; cursor: pointer;",
+              required: true,
+              data: { error: "Please select a service" } %>
+            <span class="kala-error hidden mt-1 text-xs" style="color: #c0392b; font-family: 'Inter', sans-serif;"></span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">City / District</label>
               <%= f.text_field :city, placeholder: "e.g. Hyderabad",
-                class: "w-full px-4 py-3.5 text-sm outline-none",
+                class: "kala-field w-full px-4 py-3.5 text-sm outline-none",
                 style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;" %>
             </div>
             <div>
@@ -155,18 +164,21 @@
                   ["₹15 Lakhs+", "15l_plus"]
                 ]),
                 {},
-                class: "w-full px-4 py-3.5 text-sm outline-none appearance-none",
+                class: "kala-field w-full px-4 py-3.5 text-sm outline-none appearance-none",
                 style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300; cursor: pointer;" %>
             </div>
           </div>
 
           <div>
-            <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">Your Message</label>
+            <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">Your Message *</label>
             <%= f.text_area :message,
               rows: 5,
               placeholder: "Describe your project, space dimensions, preferred style, or any specific requirements...",
-              class: "w-full px-4 py-3.5 text-sm outline-none resize-none",
-              style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;" %>
+              class: "kala-field w-full px-4 py-3.5 text-sm outline-none resize-none",
+              style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300;",
+              required: true,
+              data: { error: "Please describe your project" } %>
+            <span class="kala-error hidden mt-1 text-xs" style="color: #c0392b; font-family: 'Inter', sans-serif;"></span>
           </div>
 
           <button type="submit" class="w-full py-4 text-xs tracking-widest uppercase transition-all hover:opacity-90 flex items-center justify-center gap-3" style="font-family: 'Inter', sans-serif; background: #0A1628; color: #C9A84C; font-weight: 500; letter-spacing: 0.15em;">
@@ -178,6 +190,62 @@
             We'll respond within 24 hours. Your information is kept confidential.
           </p>
         <% end %>
+
+        <script>
+          (function() {
+            var form = document.getElementById('contact-form');
+            if (!form) return;
+
+            function showError(field, msg) {
+              field.style.borderColor = '#c0392b';
+              var err = field.parentElement.querySelector('.kala-error');
+              if (err) { err.textContent = msg; err.classList.remove('hidden'); }
+            }
+
+            function clearError(field) {
+              field.style.borderColor = 'rgba(10,22,40,0.15)';
+              var err = field.parentElement.querySelector('.kala-error');
+              if (err) { err.textContent = ''; err.classList.add('hidden'); }
+            }
+
+            // Clear error on input/change
+            form.querySelectorAll('.kala-field').forEach(function(field) {
+              field.addEventListener('input', function() { clearError(field); });
+              field.addEventListener('change', function() { clearError(field); });
+            });
+
+            function validateForm(e) {
+              var valid = true;
+
+              form.querySelectorAll('.kala-field[required]').forEach(function(field) {
+                clearError(field);
+                var empty = field.value.trim() === '' || (field.tagName === 'SELECT' && field.value === '');
+                if (empty) {
+                  showError(field, field.dataset.error || 'This field is required');
+                  if (valid) { field.focus(); field.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+                  valid = false;
+                }
+              });
+
+              // Email format check if filled
+              var emailField = form.querySelector('input[type="email"]');
+              if (emailField && emailField.value.trim() !== '') {
+                var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value.trim());
+                if (!emailOk) {
+                  showError(emailField, emailField.dataset.error || 'Please enter a valid email address');
+                  if (valid) { emailField.focus(); emailField.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+                  valid = false;
+                }
+              }
+
+              if (!valid) e.preventDefault();
+            }
+
+            // Handle both plain submit and Turbo's submit interception
+            form.addEventListener('submit', validateForm);
+            form.addEventListener('turbo:submit-start', validateForm);
+          })();
+        </script>
       </div>
 
       <!-- Side info: 2 cols -->
