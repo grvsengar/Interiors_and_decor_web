@@ -40,3 +40,4 @@ production:
     <<: *primary_production
     database: kala_interiors_production_queue
     migrations_paths: db/queue_migrate
+    pool: 10
