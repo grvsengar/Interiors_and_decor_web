@@ -120,7 +120,6 @@
             <label class="block text-xs tracking-widest uppercase mb-2" style="font-family: 'Inter', sans-serif; color: rgba(10,22,40,0.55); letter-spacing: 0.15em;">Service Required *</label>
             <%= f.select :service,
               options_for_select([
-                ["Select a service...", ""],
                 ["Plywood Cupboards", "plywood_cupboards"],
                 ["PVC Cupboards", "pvc_cupboards"],
                 ["Blinds", "blinds"],
@@ -137,7 +136,7 @@
                 ["Full Home Interior", "full_home"],
                 ["Multiple Services", "multiple"]
               ]),
-              {},
+              { include_blank: "Select a service..." },
               class: "kala-field w-full px-4 py-3.5 text-sm outline-none appearance-none",
               style: "font-family: 'Inter', sans-serif; background: white; border: 1px solid rgba(10,22,40,0.15); color: #0A1628; font-weight: 300; cursor: pointer;",
               required: true,
